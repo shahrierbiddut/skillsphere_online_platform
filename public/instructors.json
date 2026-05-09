@@ -1,0 +1,49 @@
+[{
+        "id": 1,
+        "name": "Jubayer Hossain",
+        "title": "Senior Web Developer",
+        "expertise": "Full-Stack Web Development",
+        "experience": "8+ years",
+        "rating": 4.8,
+        "students": 1200,
+        "courses": 6,
+        "bio": "Jubayer Hossain is a senior web developer who specializes in building modern full-stack applications using React, Next.js, Node.js, and databases.",
+        "image": "https://i.ibb.co/Y7M3v254/photo-1506794778202-cad84cf45f1d.avif"
+    },
+    {
+        "id": 2,
+        "name": "Sarah Ali",
+        "title": "UI/UX Designer",
+        "expertise": "User Interface & User Experience Design",
+        "experience": "6+ years",
+        "rating": 4.7,
+        "students": 980,
+        "courses": 4,
+        "bio": "Sarah Ali helps students understand user-centered design, wireframing, prototyping, visual design, and design systems for modern digital products.",
+        "image": "https://i.ibb.co/LsrfxHT/young-beautiful-woman-pink-warm-sweater-natural-look-smiling-pointing-finger-aside-winking-portrait.avif"
+    },
+    {
+        "id": 3,
+        "name": "Maria Akter",
+        "title": "Data Scientist",
+        "expertise": "Python, Data Analysis & Machine Learning",
+        "experience": "7+ years",
+        "rating": 4.9,
+        "students": 1100,
+        "courses": 5,
+        "bio": "Maria Akter teaches data analysis, Python programming, data visualization, and practical machine learning using real-world datasets.",
+        "image": "https://i.pravatar.cc/150?img=32"
+    },
+    {
+        "id": 4,
+        "name": "Ema Dash",
+        "title": "Digital Marketing Expert",
+        "expertise": "SEO, Social Media & Content Strategy",
+        "experience": "5+ years",
+        "rating": 4.6,
+        "students": 760,
+        "courses": 3,
+        "bio": "Ema Dash is a digital marketing specialist who teaches SEO, content planning, social media strategy, campaign management, and analytics.",
+        "image": "https://i.ibb.co/jZ14b7yp/17fa44e8d7f0d4a341f078b6c94a31ef.jpg"
+    }
+]

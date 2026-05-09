@@ -1,0 +1,67 @@
+[{
+        "id": 1,
+        "title": "Complete Web Development Bootcamp",
+        "instructor": "John cena",
+        "duration": "20 hours",
+        "rating": 4.8,
+        "level": "Beginner",
+        "description": "Learn full-stack web development from scratch, including HTML, CSS, JavaScript, React, Next.js, Node.js, and database basics.",
+        "image": "/devlopment.jpg",
+        "category": "Development"
+    },
+    {
+        "id": 2,
+        "title": "UI/UX Design Masterclass",
+        "instructor": "Sarah Ali",
+        "duration": "15 hours",
+        "rating": 4.7,
+        "level": "Beginner",
+        "description": "Master the fundamentals of user interface and user experience design with wireframes, prototypes, and modern design principles.",
+        "image": "https://i.ibb.co/Q712Y2CN/mobile-app-design-fundamentals-the-difference-between-UI-and-UX.webp",
+        "category": "Design"
+    },
+    {
+        "id": 3,
+        "title": "Python for Data Analysis",
+        "instructor": "Mithun Rahman",
+        "duration": "18 hours",
+        "rating": 4.9,
+        "level": "Intermediate",
+        "description": "Learn how to analyze, clean, and visualize data using Python, NumPy, Pandas, Matplotlib, and real-world datasets.",
+        "image": "/python.jpg",
+        "category": "Data Science"
+    },
+    {
+        "id": 4,
+        "title": "Digital Marketing Essentials",
+        "instructor": "Ema Dash",
+        "duration": "12 hours",
+        "rating": 4.6,
+        "level": "Beginner",
+        "description": "Build a strong foundation in digital marketing, including SEO, social media marketing, content strategy, and campaign analytics.",
+        "image": "/react.js.png",
+        "category": "Marketing"
+    },
+    {
+        "id": 5,
+        "title": "React & Next.js Crash Course",
+        "instructor": "Jubayer Hossain",
+        "duration": "16 hours",
+        "rating": 4.9,
+        "level": "Intermediate",
+        "description": "Create fast and scalable web applications using React, Next.js App Router, reusable components, routing, and API integration.",
+        "image": "/react.js.png",
+        "category": "Development"
+    },
+    {
+        "id": 6,
+        "title": "Machine Learning Foundations",
+        "instructor": "Alisha Rahman",
+        "duration": "22 hours",
+        "rating": 4.8,
+        "level": "Advanced",
+        "description": "Understand the core concepts of machine learning, including supervised learning, model training, evaluation, and practical ML workflows.",
+        "image": "/matchine.jpg",
+        "category": "AI"
+    }
+]
