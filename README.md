@@ -2,6 +2,8 @@
 
 A modern, feature-rich online learning platform built with Next.js 16, React 19, and Tailwind CSS. SkillSphere enables instructors to create and manage courses while providing students with an interactive learning experience.
 
+Live Link: (https://skillsphere-online-platform.vercel.app/)
+
 ## 📋 Table of Contents
 
 - [Features](#features)
@@ -373,6 +375,17 @@ This project is private and maintained by the SkillSphere team.
 ## 📞 Support
 
 For issues, bugs, or feature requests, please create an issue in the GitHub repository.
+
+## 🌐 Connect With Me
+
+- 💼 LinkedIn: [Shahrier Hossain Biddut](https://www.linkedin.com/in/shahrier-hossain-biddut-3b847528a?
+utm_source=share_via&utm_content=profile&utm_medium=member_android)
+
+- 📘 Facebook: [Facebook Profile](https://www.facebook.com/share/1B6Hw7xVdx/)
+
+- ▶️ YouTube: [SkillSphere Demo Video](https://www.youtube.com/watch?v=1OdHatIkFa4)
+
+- 💻 GitHub: [@shahrierbiddut](https://github.com/shahrierbiddut)
 
 ## 👥 Team
 
