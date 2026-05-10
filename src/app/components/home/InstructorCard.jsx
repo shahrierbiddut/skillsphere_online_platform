@@ -2,6 +2,23 @@ import Image from "next/image";
 import { BookOpenText, Star, Users } from "lucide-react";
 import { formatCompactCount } from "@/lib/formatters";
 
+/**
+ * InstructorCard Component
+ * Displays instructor information in a card format
+ * 
+ * @component
+ * @param {Object} props - Component props
+ * @param {Object} props.instructor - Instructor data
+ * @param {number} props.instructor.id - Instructor ID
+ * @param {string} props.instructor.name - Instructor name
+ * @param {string} props.instructor.title - Job title
+ * @param {string} props.instructor.expertise - Expertise area
+ * @param {number} props.instructor.rating - Instructor rating
+ * @param {number} props.instructor.students - Number of students
+ * @param {number} props.instructor.courses - Number of courses
+ * @param {string} props.instructor.image - Profile image URL
+ * @returns {JSX.Element} Instructor card element
+ */
 const InstructorCard = ({ instructor }) => {
   return (
     <article className="rounded-[24px] border border-[#e6ebff] bg-white p-5 shadow-[0_14px_40px_rgba(19,34,86,0.08)] transition-all duration-200 hover:-translate-y-1 hover:shadow-[0_20px_50px_rgba(19,34,86,0.12)]">

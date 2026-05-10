@@ -3,6 +3,25 @@ import Link from "next/link";
 import { Star } from "lucide-react";
 import { formatCompactCount } from "@/lib/formatters";
 
+/**
+ * CourseCard Component
+ * Displays a single course in a card format with course details
+ * 
+ * @component
+ * @param {Object} props - Component props
+ * @param {Object} props.course - Course data object
+ * @param {number} props.course.id - Unique course identifier
+ * @param {string} props.course.title - Course title
+ * @param {string} props.course.category - Course category
+ * @param {string} props.course.level - Difficulty level
+ * @param {string} props.course.image - Course image URL
+ * @param {string} props.course.instructor - Instructor name
+ * @param {number} props.course.rating - Course rating
+ * @param {Object} props.course.instructorDetails - Instructor information
+ * @param {boolean} [props.compact=false] - Render in compact mode
+ * @param {string} [props.anchorId] - Optional anchor ID for linking
+ * @returns {JSX.Element} Course card element
+ */
 const CourseCard = ({ course, compact = false, anchorId }) => {
   const cardBodyClass = compact ? "p-4" : "p-5";
   const titleClass = compact ? "text-base" : "text-lg";
