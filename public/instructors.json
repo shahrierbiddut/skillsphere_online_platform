@@ -45,5 +45,41 @@
         "courses": 3,
         "bio": "Ema Dash is a digital marketing specialist who teaches SEO, content planning, social media strategy, campaign management, and analytics.",
         "image": "https://i.ibb.co/jZ14b7yp/17fa44e8d7f0d4a341f078b6c94a31ef.jpg"
+    },
+    {
+        "id": 5,
+        "name": "Alisha Rahman",
+        "title": "Course Instructor",
+        "expertise": "Machine Learning & AI",
+        "experience": "6+ years",
+        "rating": 4.8,
+        "students": 850,
+        "courses": 3,
+        "bio": "Alisha Rahman teaches machine learning foundations and AI concepts with practical applications.",
+        "image": "https://i.ibb.co/ynZrsrhm/portrait-woman-white-shirt-coat-1303-12298.avif"
+    },
+    {
+        "id": 6,
+        "name": "John cena",
+        "title": "Web Development Instructor",
+        "expertise": "Full-Stack Web Development",
+        "experience": "7+ years",
+        "rating": 4.7,
+        "students": 920,
+        "courses": 2,
+        "bio": "John cena specializes in teaching complete web development bootcamp with modern technologies.",
+        "image": "https://i.ibb.co/n4ZCpVq/handsome-bearded-guy-posing-against-white-wall-273609-20597.avif"
+    },
+    {
+        "id": 7,
+        "name": "Mithun Rahman",
+        "title": "Data Science Instructor",
+        "expertise": "Python & Data Analysis",
+        "experience": "5+ years",
+        "rating": 4.9,
+        "students": 750,
+        "courses": 2,
+        "bio": "Mithun Rahman teaches Python for data analysis with real-world datasets and practical examples.",
+        "image": "https://i.ibb.co/1t4nrRLs/1685114392138-01.jpg"
     }
 ]

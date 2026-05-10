@@ -22,7 +22,7 @@ const YouTubeIcon = ({ className }) => (
 
 const contactItems = [
   {
-    label: "+1 (555) 987-6543",
+    label: "+088 1234 5678",
     Icon: Phone
   },
   {
@@ -30,34 +30,34 @@ const contactItems = [
     Icon: Mail
   },
   {
-    label: "123 Learning Lane\nEducation City, 10001",
+    label: "123 Learning Lane\ Education City Dhaka, 1201",
     Icon: MapPin
   }
 ];
 
 const socialLinks = [
   {
-    label: "LinkedIn",
+    label: "Facebook",
     href: "#",
-    tone: "text-[#0a66c2]",
-    Icon: LinkedInIcon
+    bgColor: "bg-[#1877f2]",
+    Icon: FacebookIcon
   },
   {
     label: "X",
     href: "#",
-    tone: "text-slate-900",
+    bgColor: "bg-[#1a1a1a]",
     Icon: X
   },
   {
-    label: "Facebook",
+    label: "LinkedIn",
     href: "#",
-    tone: "text-[#1877f2]",
-    Icon: FacebookIcon
+    bgColor: "bg-[#0a66c2]",
+    Icon: LinkedInIcon
   },
   {
     label: "YouTube",
     href: "#",
-    tone: "text-[#ff2d2d]",
+    bgColor: "bg-[#e53935]",
     Icon: YouTubeIcon
   }
 ];
@@ -71,43 +71,43 @@ const Footer = () => {
   return (
     <footer className="px-4 pb-6 pt-10 sm:px-6 lg:px-8">
       <div className="mx-auto max-w-7xl">
-        <div className="relative overflow-hidden rounded-2xl bg-gradient-to-r from-[#11348f] via-[#1545ad] to-[#1f4ebc] px-5 py-6 text-white shadow-[0_18px_45px_rgba(17,52,143,0.24)] sm:px-8">
-          <div className="pointer-events-none absolute inset-y-0 right-0 w-1/2 bg-[radial-gradient(circle_at_bottom_right,rgba(255,255,255,0.16),transparent_45%)]" />
-          <div className="relative flex flex-col gap-8 lg:flex-row lg:items-start lg:justify-between">
-            <div className="min-w-0 lg:w-[30%]">
-              <h2 className="mb-3 text-lg font-semibold">Contact Info</h2>
-              <div className="space-y-3 text-sm text-white/90">
+        <div className="relative overflow-hidden rounded-2xl bg-gradient-to-r from-[#1a3a7a] to-[#2d5caa] px-8 py-8 text-white shadow-lg sm:px-10">
+          <div className="relative flex flex-col gap-6 lg:flex-row lg:items-center lg:justify-between">
+            {/* Contact Info Section */}
+            <div className="lg:flex-1">
+              <h2 className="mb-3 text-xs font-bold uppercase tracking-wide text-white">Contact Info</h2>
+              <div className="space-y-1.5 text-xs text-gray-100">
                 {contactItems.map(({ label, Icon }) => (
-                  <div key={label} className="flex items-start gap-3">
-                    <span className="mt-0.5 flex h-9 w-9 shrink-0 items-center justify-center rounded-full border border-white/20 bg-white/10 text-white shadow-[0_8px_18px_rgba(0,0,0,0.16)]">
-                      <Icon className="h-4.5 w-4.5" strokeWidth={2} />
-                    </span>
-                    <span className="whitespace-pre-line leading-6">{label}</span>
+                  <div key={label} className="flex items-center gap-2">
+                    <Icon className="h-3.5 w-3.5 text-white" strokeWidth={2.5} />
+                    <span>{label}</span>
                   </div>
                 ))}
               </div>
             </div>
 
-            <div className="lg:w-[24%]">
-              <h2 className="mb-4 text-lg font-semibold">Social Links</h2>
-              <div className="flex flex-wrap items-center gap-3">
-                {socialLinks.map(({ label, href, tone, Icon }) => (
+            {/* Social Links Section */}
+            <div className="lg:flex-1 lg:text-center">
+              <h2 className="mb-3 text-xs font-bold uppercase tracking-wide text-white">Social Links</h2>
+              <div className="flex items-center justify-start gap-2 lg:justify-center">
+                {socialLinks.map(({ label, href, bgColor, Icon }) => (
                   <Link
                     key={label}
                     href={href}
                     aria-label={label}
-                    className={`flex h-10 w-10 items-center justify-center rounded-full border border-white/20 bg-white text-sm shadow-[0_10px_22px_rgba(0,0,0,0.14)] transition-all duration-200 hover:-translate-y-0.5 hover:scale-105 hover:shadow-[0_14px_28px_rgba(0,0,0,0.18)] ${tone}`}
+                    className={`flex h-8 w-8 items-center justify-center rounded-full ${bgColor} text-white transition-all duration-200 hover:scale-110 hover:shadow-lg`}
                   >
-                    <Icon className="h-[18px] w-[18px]" strokeWidth={2.1} />
+                    <Icon className="h-4 w-4" strokeWidth={2} fill="white" />
                   </Link>
                 ))}
               </div>
             </div>
 
-            <div className="flex flex-wrap items-center gap-4 text-sm text-white/90 lg:w-auto lg:self-center">
+            {/* Legal Links Section */}
+            <div className="flex items-center gap-4 text-xs text-gray-100 lg:justify-end">
               {legalLinks.map((link, index) => (
                 <React.Fragment key={link.label}>
-                  {index > 0 && <span className="hidden text-white/35 sm:inline">|</span>}
+                  {index > 0 && <span className="text-gray-300">|</span>}
                   <Link
                     href={link.href}
                     className="transition-colors duration-200 hover:text-white"

@@ -1,21 +1,61 @@
+"use client";
+
 import Image from "next/image";
 import Link from "next/link";
 import { ArrowLeft, ShieldCheck, Star } from "lucide-react";
 import { formatCompactCount } from "@/lib/formatters";
 import CourseStats from "./CourseStats";
+import { useEffect, useState } from "react";
 
 const CourseDetailsHero = ({ course }) => {
   const instructor = course.instructorDetails;
   const reviewCount = instructor?.students ?? 1000;
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
+
+  useEffect(() => {
+    let isMounted = true;
+
+    const checkAuthStatus = async () => {
+      try {
+        const response = await fetch("/api/auth/status", {
+          cache: "no-store"
+        });
+        const userData = await response.json();
+
+        if (!isMounted) {
+          return;
+        }
+
+        if (response.ok && userData.authenticated) {
+          setIsLoggedIn(true);
+        } else {
+          setIsLoggedIn(false);
+        }
+      } catch {
+        if (!isMounted) {
+          return;
+        }
+        setIsLoggedIn(false);
+      }
+    };
+
+    checkAuthStatus();
+
+    return () => {
+      isMounted = false;
+    };
+  }, []);
 
   return (
     <section className="space-y-5">
-      <div className="rounded-2xl border border-amber-200 bg-amber-50 px-4 py-3 text-sm font-medium text-amber-800">
-        <div className="flex items-center gap-2">
-          <ShieldCheck className="h-4.5 w-4.5" strokeWidth={2.2} />
-          <span>Course details page - sign in to track progress and unlock lessons.</span>
+      {!isLoggedIn && (
+        <div className="rounded-2xl border border-amber-200 bg-amber-50 px-4 py-3 text-sm font-medium text-amber-800">
+          <div className="flex items-center gap-2">
+            <ShieldCheck className="h-4.5 w-4.5" strokeWidth={2.2} />
+            <span>Course details page - sign in to track progress and unlock lessons.</span>
+          </div>
         </div>
-      </div>
+      )}
 
       <Link
         href="/courses"
