@@ -34,19 +34,13 @@ const HomeHeroSlider = ({ slides }) => {
     <section className="relative overflow-hidden rounded-[28px] bg-gradient-to-r from-[#1438a8] via-[#2353eb] to-[#244ad8] px-5 py-8 text-white shadow-[0_28px_70px_rgba(35,83,235,0.28)] sm:px-8 lg:px-10">
       <div className="pointer-events-none absolute inset-y-0 right-0 w-[45%] bg-[radial-gradient(circle_at_center,rgba(255,255,255,0.18),transparent_55%)]" />
       <div className="pointer-events-none absolute left-1/2 top-12 h-28 w-28 rounded-full border border-white/12" />
-      <div className="pointer-events-none absolute right-16 top-10 h-3 w-3 rounded-full bg-white/70 shadow-[0_0_18px_rgba(255,255,255,0.7)]" />
-      <div className="pointer-events-none absolute right-28 top-24 h-2 w-2 rounded-full bg-white/60 shadow-[0_0_14px_rgba(255,255,255,0.7)]" />
+
       <div className="pointer-events-none absolute bottom-10 left-8 h-32 w-32 rounded-full bg-white/6 blur-2xl" />
 
       <div className="relative grid items-center gap-10 lg:grid-cols-[1.15fr_0.85fr]">
         <div className="max-w-2xl">
-          <div className="mb-5 inline-flex items-center gap-2 rounded-full border border-white/16 bg-white/10 px-4 py-2 text-xs font-semibold uppercase tracking-[0.18em] text-white/85">
-            <Sparkles className="h-3.5 w-3.5" strokeWidth={2.4} />
-            <span>{slide.eyebrow}</span>
-          </div>
-
           <h1 className="max-w-xl text-4xl font-bold leading-tight tracking-tight sm:text-5xl">
-            {slide.title} <span className="inline-block align-middle">{slide.emoji}</span>
+            {slide.title}
           </h1>
           <h2 className="mt-3 text-2xl font-semibold text-white/95 sm:text-[2rem]">{slide.highlight}</h2>
           <p className="mt-4 max-w-xl text-base leading-7 text-white/78 sm:text-lg">
